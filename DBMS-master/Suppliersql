@@ -1,0 +1,58 @@
+CREATE TABLE SUPPLIER(
+    SID INT,
+    SNAME VARCHAR(20),
+    ADDRESS VARCHAR(20),
+    PRIMARY KEY(SID)
+);
+DESC SUPPLIER;
+
+
+CREATE TABLE PARTS(
+    PID INT,
+    PNAME VARCHAR(20),
+    COLOR VARCHAR(20),
+    PRIMARY KEY(PID)
+);
+DESC PARTS;
+
+
+CREATE TABLE CATALOG(
+    SID INT,
+    PID INT,
+    COST REAL,
+    PRIMARY KEY(SID, PID),
+    FOREIGN KEY(SID) REFERENCES SUPPLIER(SID),
+    FOREIGN KEY(PID) REFERENCES PARTS(PID)
+);
+DESC CATALOG;
+
+
+INSERT INTO SUPPLIER VALUES(&SID, '&SNAME', '&ADDRESS');
+SELECT * FROM SUPPLIER;
+
+INSERT INTO PARTS VALUES(&PID, '&PNAME', '&COLOR');
+SELECT * FROM PARTS;
+
+INSERT INTO CATALOG VALUES(&SID, &PID, &COST);
+SELECT * FROM CATALOG;
+COMMIT;
+
+
+
+-- i) Find the pnames of parts for which there is some supplier.
+SELECT PNAME FROM PARTS, CATALOG
+    WHERE catalog.pid = parts.pid;
+
+
+-- ii) Find the snames of suppliers who supply every part.
+
+
+-- iii) Find the snames of suppliers who supply every red part.
+SELECT SNAME FROM SUPPLIER, CATALOG, PARTS
+    WHERE PARTS.COLOR = 'RED' AND CATALOG.PID = PARTS.PID AND CATALOG.SID = SUPPLIER.SID;
+    
+
+-- iv) Find the pnames of parts supplied by Acme Widget Suppliers and by no one else.
+SELECT PNAME FROM SUPPLIER, CATALOG, PARTS
+    WHERE SUPPLIER.SNAME = 'ACME WIDGET' AND CATALOG.SID = SUPPLIER.SID;
+
