@@ -1,0 +1,4 @@
+Outcome:
+
+We learned how to Configure IP address to Routers in Packet Tracer
+\We learned about ping messages, cli , reply
