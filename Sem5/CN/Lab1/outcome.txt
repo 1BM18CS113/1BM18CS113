@@ -1,0 +1,7 @@
+we learnt how network topologies work, how to confifure ip addresses for devices
+
+we learnt about HUB:
+1. A dumb device, which simply broadcasts the data it recieved through all its ports
+
+SWITCH:
+1. An intelligent devicet that only sends the data through the required port
