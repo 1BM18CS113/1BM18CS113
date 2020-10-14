@@ -1,0 +1,13 @@
+Lab 3 Outcomes:
+
+
+configure default route to a different network statically -- we can connect two or more networks together
+
+
+request timed out messages
+
+
+destination unreachable messages
+
+
+reply from pinging a pc on another network
