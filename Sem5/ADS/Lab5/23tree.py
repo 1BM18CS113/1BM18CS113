@@ -42,11 +42,11 @@ def insert(node, value, root=True):
     else:
         node.right = insert(node.right, value, root=False)
     
-    # update tree w.r.t invariants
+    
     node = node.rotate_left()
     node = node.rotate_right()
     node.flip_colors()
-    # keep root black
+    
     if root:
         node.red = False
     return node
