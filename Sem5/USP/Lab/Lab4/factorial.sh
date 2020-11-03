@@ -10,5 +10,6 @@ while [ $count -lt $var ];do
 	
 
 done
+#end of loop
 
 echo "Factorial=  "$tmp""
