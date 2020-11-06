@@ -1,0 +1,5 @@
+Lab 5 - Outcome:
+
+Prog1 - Configuring DHCP server
+Prog2 - Configuring RIP Routing Protocol in Routers
+Prog3 - WEB server and DNS resolution 
