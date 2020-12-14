@@ -1,5 +1,3 @@
-# (boys(x) ^ play(y,x)) imp (loves(xy))
-# (Animals(x) ^ kills(z,x)) imp (neg loves(y,z))
 
 import re
 
