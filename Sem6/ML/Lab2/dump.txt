@@ -1,0 +1,47 @@
+(base) C:\College\SEM6\ML\Lab2>python candidate_el.py
+[['sunny' 'warm' 'normal' 'strong' 'warm' 'same']
+ ['sunny' 'warm' 'high' 'strong' 'warm' 'same']
+ ['rainy' 'cold' 'high' 'strong' 'warm' 'change']
+ ['sunny' 'warm' 'high' 'strong' 'cool' 'change']]
+['yes' 'yes' 'no' 'yes']
+initialization of specific_h and general_h
+['sunny' 'warm' 'normal' 'strong' 'warm' 'same']
+[['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?']]
+['sunny' 'warm' 'normal' 'strong' 'warm' 'same']
+['sunny' 'warm' 'normal' 'strong' 'warm' 'same']
+['sunny' 'warm' 'normal' 'strong' 'warm' 'same']
+['sunny' 'warm' 'normal' 'strong' 'warm' 'same']
+['sunny' 'warm' 'normal' 'strong' 'warm' 'same']
+['sunny' 'warm' 'normal' 'strong' 'warm' 'same']
+['sunny' 'warm' 'normal' 'strong' 'warm' 'same']
+ steps of Candidate Elimination Algorithm 1
+['sunny' 'warm' 'normal' 'strong' 'warm' 'same']
+[['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?']]
+['sunny' 'warm' 'normal' 'strong' 'warm' 'same']
+['sunny' 'warm' 'normal' 'strong' 'warm' 'same']
+['sunny' 'warm' '?' 'strong' 'warm' 'same']
+['sunny' 'warm' '?' 'strong' 'warm' 'same']
+['sunny' 'warm' '?' 'strong' 'warm' 'same']
+['sunny' 'warm' '?' 'strong' 'warm' 'same']
+['sunny' 'warm' '?' 'strong' 'warm' 'same']
+ steps of Candidate Elimination Algorithm 2
+['sunny' 'warm' '?' 'strong' 'warm' 'same']
+[['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?']]
+['sunny' 'warm' '?' 'strong' 'warm' 'same']
+ steps of Candidate Elimination Algorithm 3
+['sunny' 'warm' '?' 'strong' 'warm' 'same']
+[['sunny', '?', '?', '?', '?', '?'], ['?', 'warm', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', 'same']]
+['sunny' 'warm' '?' 'strong' 'warm' 'same']
+['sunny' 'warm' '?' 'strong' 'warm' 'same']
+['sunny' 'warm' '?' 'strong' 'warm' 'same']
+['sunny' 'warm' '?' 'strong' 'warm' 'same']
+['sunny' 'warm' '?' 'strong' '?' 'same']
+['sunny' 'warm' '?' 'strong' '?' '?']
+['sunny' 'warm' '?' 'strong' '?' '?']
+ steps of Candidate Elimination Algorithm 4
+['sunny' 'warm' '?' 'strong' '?' '?']
+[['sunny', '?', '?', '?', '?', '?'], ['?', 'warm', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?']]
+Final Specific_h:
+['sunny' 'warm' '?' 'strong' '?' '?']
+Final General_h:
+[['sunny', '?', '?', '?', '?', '?'], ['?', 'warm', '?', '?', '?', '?']]
