@@ -1,0 +1,20 @@
+# Student
+db.Student.insert({_id:1,name:"Sumanth", age:21, status:"p"});
+
+# Faculty
+db.Faculty.insert({_id:1, name:"Scammer1", age:50, course:"cSe"});
+
+# Library
+db.Library.insert({_id:1, bname:"Physics", publisher:"waste", price:100});
+
+# Admission
+db.Admission.insert({_id:1, name:"dalai lmao", mode:"cet", branch:"cse"});
+
+# CollegeFestival
+db.CollegeFestival.insert({_id:2018, name:"culture", guest:"RandomGuy", satisfactionRate:20});
+
+# COE
+db.coe.insert({_id:1, Sem:"ODD", head:"MrX", papers:20, examMonth:"March", resultMonth:"April"});
+
+
+

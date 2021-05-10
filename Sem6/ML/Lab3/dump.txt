@@ -1,0 +1,34 @@
+ Input Data Set is:
+      outlook temperature humidity    wind answer
+0      sunny         hot     high    weak     no
+1      sunny         hot     high  strong     no
+2   overcast         hot     high    weak    yes
+3       rain        mild     high    weak    yes
+4       rain        cool   normal    weak    yes
+5       rain        cool   normal  strong     no
+6   overcast        cool   normal  strong    yes
+7      sunny        mild     high    weak     no
+8      sunny        cool   normal    weak    yes
+9       rain        mild   normal    weak    yes
+10     sunny        mild   normal  strong    yes
+11  overcast        mild     high  strong    yes
+12  overcast         hot   normal    weak    yes
+13      rain        mild     high  strong     no
+
+
+Final decision tree:
+
+outlook
+        overcast :  ['yes']
+
+        rain
+                wind
+                        strong :  ['no']
+
+                        weak :  ['yes']
+
+        sunny
+                humidity
+                        high :  ['no']
+
+                        normal :  ['yes']
